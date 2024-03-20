@@ -10,6 +10,7 @@ import java.io.ObjectInputStream;
 public class SerializationEx2 {
     public static void main(String[] args) {
         Employee bestEmployee;
+
         try (
                 ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("employees2.bin"))
         ) {
